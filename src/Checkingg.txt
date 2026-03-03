@@ -1,0 +1,372 @@
+try {
+					File file11 = new File("C:\\Prominer");
+			        if (!file11.exists()) {
+			            if (file11.mkdir()) {
+			                System.out.println("Directory is created!");
+			            } else {
+			                System.out.println("Failed to create directory!");
+			            }
+			        }
+					
+					
+					File ff111=new File(Path+"Check.txt");
+					if(ff111.exists()==false)
+					{
+						ff111.createNewFile();
+						WriteFile W=new WriteFile(Path+"Check.txt");
+						W.writeToFile("0");
+						File fff=new File(Path+"Bank_List.txt");
+						if(fff.exists()==false)
+						{
+							fff.createNewFile();
+							WriteFile WWW=new WriteFile(Path+"Bank_List.txt",true);
+							WWW.writeToFile("Please Select your Bank");
+							WWW.writeToFile("State Bank of India");
+							WWW.writeToFile("State Bank of Bikaner and Jaipur");
+							WWW.writeToFile("State Bank of Hyderabad");
+							WWW.writeToFile("State Bank of Mysore");
+							WWW.writeToFile("State Bank of Patiala");
+							WWW.writeToFile("State Bank of Travancore");
+							WWW.writeToFile("Allahabad Bank");
+							WWW.writeToFile("Andhra Bank");
+							WWW.writeToFile("Bank of India");
+							WWW.writeToFile("Bank of Baroda");
+							WWW.writeToFile("Bank of Maharashtra");
+							WWW.writeToFile("Canara Bank");
+							WWW.writeToFile("Central Bank of India");
+							WWW.writeToFile("Corporation Bank");
+							WWW.writeToFile("Dena Bank");
+							WWW.writeToFile("Indian Bank");
+							WWW.writeToFile("Indian Overseas Bank");
+							WWW.writeToFile("Oriental Bank of Commerce");
+							WWW.writeToFile("Punjab & Sindh Bank");
+							WWW.writeToFile("Punjab National Bank");
+							WWW.writeToFile("Syndicate Bank");
+							WWW.writeToFile("UCO Bank");
+							WWW.writeToFile("Union Bank of India");
+							WWW.writeToFile("United Bank of India");
+							WWW.writeToFile("Vijaya Bank");
+							WWW.writeToFile("Bharatiya Mahila Bank");
+							WWW.writeToFile("State Bank of Sikkim");
+							WWW.writeToFile("Tamilnad Mercantile Bank Limited");
+							WWW.writeToFile("Axis Bank");
+							WWW.writeToFile("Bandhan Bank");
+							WWW.writeToFile("Catholic Syrian Bank");
+							WWW.writeToFile("City Union Bank");
+							WWW.writeToFile("Dhanlaxmi Bank");
+							WWW.writeToFile("DCB Bank");
+							WWW.writeToFile("Federal Bank");
+							WWW.writeToFile("HDFC Bank");
+							WWW.writeToFile("ICICI Bank");
+							WWW.writeToFile("IDFC Bank");
+							WWW.writeToFile("Karnataka Bank");
+							WWW.writeToFile("IndusInd Bank");
+							WWW.writeToFile("Jammu and Kashmir Bank");
+							WWW.writeToFile("Karur Vysya Bank");
+							WWW.writeToFile("Kotak Mahindra Bank");
+							WWW.writeToFile("Lakshmi Vilas Bank");
+							WWW.writeToFile("Nainital Bank");
+							WWW.writeToFile("RBL Bank");
+							WWW.writeToFile("South Indian Bank");
+							WWW.writeToFile("Yes bank");
+							WWW.writeToFile("Citi Bank");	
+						}
+						else
+						{
+							fff.delete();
+							fff.createNewFile();
+							WriteFile WWW=new WriteFile(Path+"Bank_List.txt",true);
+							WWW.writeToFile("Please Select your Bank");
+							WWW.writeToFile("State Bank of India");
+							WWW.writeToFile("State Bank of Bikaner and Jaipur");
+							WWW.writeToFile("State Bank of Hyderabad");
+							WWW.writeToFile("State Bank of Mysore");
+							WWW.writeToFile("State Bank of Patiala");
+							WWW.writeToFile("State Bank of Travancore");
+							WWW.writeToFile("Allahabad Bank");
+							WWW.writeToFile("Andhra Bank");
+							WWW.writeToFile("Bank of India");
+							WWW.writeToFile("Bank of Baroda");
+							WWW.writeToFile("Bank of Maharashtra");
+							WWW.writeToFile("Canara Bank");
+							WWW.writeToFile("Central Bank of India");
+							WWW.writeToFile("Corporation Bank");
+							WWW.writeToFile("Dena Bank");
+							WWW.writeToFile("Indian Bank");
+							WWW.writeToFile("Indian Overseas Bank");
+							WWW.writeToFile("Oriental Bank of Commerce");
+							WWW.writeToFile("Punjab & Sindh Bank");
+							WWW.writeToFile("Punjab National Bank");
+							WWW.writeToFile("Syndicate Bank");
+							WWW.writeToFile("UCO Bank");
+							WWW.writeToFile("Union Bank of India");
+							WWW.writeToFile("United Bank of India");
+							WWW.writeToFile("Vijaya Bank");
+							WWW.writeToFile("Bharatiya Mahila Bank");
+							WWW.writeToFile("State Bank of Sikkim");
+							WWW.writeToFile("Tamilnad Mercantile Bank Limited");
+							WWW.writeToFile("Axis Bank");
+							WWW.writeToFile("Bandhan Bank");
+							WWW.writeToFile("Catholic Syrian Bank");
+							WWW.writeToFile("City Union Bank");
+							WWW.writeToFile("Dhanlaxmi Bank");
+							WWW.writeToFile("DCB Bank");
+							WWW.writeToFile("Federal Bank");
+							WWW.writeToFile("HDFC Bank");
+							WWW.writeToFile("ICICI Bank");
+							WWW.writeToFile("IDFC Bank");
+							WWW.writeToFile("Karnataka Bank");
+							WWW.writeToFile("IndusInd Bank");
+							WWW.writeToFile("Jammu and Kashmir Bank");
+							WWW.writeToFile("Karur Vysya Bank");
+							WWW.writeToFile("Kotak Mahindra Bank");
+							WWW.writeToFile("Lakshmi Vilas Bank");
+							WWW.writeToFile("Nainital Bank");
+							WWW.writeToFile("RBL Bank");
+							WWW.writeToFile("South Indian Bank");
+							WWW.writeToFile("Yes bank");
+							WWW.writeToFile("Citi Bank");
+						}
+					}
+					ReadFile RR=new ReadFile(Path+"Check.txt");
+					String s[]=RR.OpenFile();
+					if(s[0].equals("0")==true)
+					{
+						for(int i=0;i<50;i++)
+						{
+							File ff=new File(Path+""+i+".txt");
+							if(ff.exists()==false)
+							{
+								ff.createNewFile();
+							}
+							WriteFile WW=new WriteFile(Path+""+i+".txt",true);
+							if(i==0)
+							{
+								WW.writeToFile("459"+"    "+"807");
+								WW.writeToFile("65"+"    "+"772");
+								WW.writeToFile("90"+"    "+"746");
+								WW.writeToFile("462"+"    "+"725");
+							}
+							else if(i==11)
+							{
+								WW.writeToFile("459"+"    "+"811");
+								WW.writeToFile("65"+"    "+"776");
+								WW.writeToFile("90"+"    "+"750");
+								WW.writeToFile("462"+"    "+"729");
+							}
+							else if(i==37)
+							{
+								WW.writeToFile("459"+"    "+"813");
+								WW.writeToFile("65"+"    "+"778");
+								WW.writeToFile("90"+"    "+"752");
+								WW.writeToFile("462"+"    "+"731");
+							}
+							else if(i==38)
+							{
+								WW.writeToFile("456"+"    "+"807");
+								WW.writeToFile("80"+"    "+"772");
+								WW.writeToFile("90"+"    "+"746");
+								WW.writeToFile("462"+"    "+"725");
+							}
+							else
+							{
+								WW.writeToFile("459"+"    "+"807");
+								WW.writeToFile("65"+"    "+"772");
+								WW.writeToFile("90"+"    "+"746");
+								WW.writeToFile("462"+"    "+"725");
+							}
+							
+							
+							
+						}
+						
+						
+						for(int i=0;i<50;i++)
+						{
+						
+							File ff=new File(Path+""+i+".txt");
+							if(ff.exists()==false)
+							{
+							//	ff.delete();
+								ff.createNewFile();
+							}
+							else
+							{
+								//ff.delete();
+								//ff.createNewFile();
+								// File fileToBeHidden = new File(Path+""+i+".txt");
+								 
+						        //   Path path = FileSystems.getDefault().getPath(Path+""+i+".txt");
+
+						           // Hide file;
+						         //  Files.setAttribute(path, "dos:hidden", false);
+								setHiddenProperty(ff);
+							}
+					          
+							
+						}
+						
+						
+						
+						WriteFile W=new WriteFile(Path+"Check.txt");
+						W.writeToFile("0123***");
+						
+						
+					}
+					
+					File fff=new File(Path+"Bank_List.txt");
+					if(fff.exists()==false)
+					{
+						fff.createNewFile();
+						WriteFile WWW=new WriteFile(Path+"Bank_List.txt",true);
+						WWW.writeToFile("State Bank and its associates");
+						WWW.writeToFile("State Bank of India");
+						WWW.writeToFile("State Bank of Bikaner and Jaipur");
+						WWW.writeToFile("State Bank of Hyderabad");
+						WWW.writeToFile("State Bank of Mysore");
+						WWW.writeToFile("State Bank of Patiala");
+						WWW.writeToFile("State Bank of Travancore");
+						WWW.writeToFile("Allahabad Bank");
+						WWW.writeToFile("Andhra Bank");
+						WWW.writeToFile("Bank of India");
+						WWW.writeToFile("Bank of Baroda");
+						WWW.writeToFile("Bank of Maharashtra");
+						WWW.writeToFile("Canara Bank");
+						WWW.writeToFile("Central Bank of India");
+						WWW.writeToFile("Corporation Bank");
+						WWW.writeToFile("Dena Bank");
+						WWW.writeToFile("Indian Bank");
+						WWW.writeToFile("Indian Overseas Bank");
+						WWW.writeToFile("Oriental Bank of Commerce");
+						WWW.writeToFile("Punjab & Sindh Bank");
+						WWW.writeToFile("Punjab National Bank");
+						WWW.writeToFile("Syndicate Bank");
+						WWW.writeToFile("UCO Bank");
+						WWW.writeToFile("Union Bank of India");
+						WWW.writeToFile("United Bank of India");
+						WWW.writeToFile("Vijaya Bank");
+						WWW.writeToFile("Bharatiya Mahila Bank");
+						WWW.writeToFile("State Bank of Sikkim");
+						WWW.writeToFile("Tamilnad Mercantile Bank Limited");
+						WWW.writeToFile("Axis Bank");
+						WWW.writeToFile("Bandhan Bank");
+						WWW.writeToFile("Catholic Syrian Bank");
+						WWW.writeToFile("City Union Bank");
+						WWW.writeToFile("Dhanlaxmi Bank");
+						WWW.writeToFile("DCB Bank");
+						WWW.writeToFile("Federal Bank");
+						WWW.writeToFile("HDFC Bank");
+						WWW.writeToFile("ICICI Bank");
+						WWW.writeToFile("IDFC Bank");
+						WWW.writeToFile("Karnataka Bank");
+						WWW.writeToFile("IndusInd Bank");
+						WWW.writeToFile("Jammu and Kashmir Bank");
+						WWW.writeToFile("Karur Vysya Bank");
+						WWW.writeToFile("Kotak Mahindra Bank");
+						WWW.writeToFile("Lakshmi Vilas Bank");
+						WWW.writeToFile("Nainital Bank");
+						WWW.writeToFile("RBL Bank");
+						WWW.writeToFile("South Indian Bank");
+						WWW.writeToFile("Yes bank");
+						WWW.writeToFile("Citi Bank");	
+					}
+					
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public void checktime() throws IOException
+	{
+		String html = "";
+		 Document doc = Jsoup.connect(html).get();
+	        String text = doc.body().text(); 
+	      System.out.println(text);
+	}
+	public static boolean checkk()throws IOException
+	{
+		ReadFile R4=new ReadFile("C:/Users/"+System.getProperty("user.name")+"/Documents/log.txt");
+		String ss[]=R4.OpenFile();
+		int at=Integer.parseInt(ss[0]);
+		if(at>=20)
+		{
+			File file11 = new File("C:\\Prominer");
+			deleteDirectory(file11);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	public static boolean deleteDirectory(File directory) {
+	    if(directory.exists()){
+	        File[] files = directory.listFiles();
+	        if(null!=files){
+	            for(int i=0; i<files.length; i++) {
+	                if(files[i].isDirectory()) {
+	                    deleteDirectory(files[i]);
+	                }
+	                else {
+	                    files[i].delete();
+	                }
+	            }
+	        }
+	    }
+	    return(directory.delete());
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+File ff11=new File("C:/Users/"+System.getProperty("user.name")+"/Documents/log.txt");
+						if(ff11.exists()==false)
+						{
+							ff11.createNewFile();
+							WriteFile W=new WriteFile("C:/Users/"+System.getProperty("user.name")+"/Documents/log.txt");
+							W.writeToFile("0");
+						}
+						else
+						{
+							ReadFile R=new ReadFile("C:/Users/"+System.getProperty("user.name")+"/Documents/log.txt");
+							String ss[]=R.OpenFile();
+							int at=Integer.parseInt(ss[0]);
+							at++;
+							WriteFile W=new WriteFile("C:/Users/"+System.getProperty("user.name")+"/Documents/log.txt");
+							W.writeToFile(at+"");
+						}
+						
+						
+						
