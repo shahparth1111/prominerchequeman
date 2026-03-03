@@ -4,4 +4,5 @@ A simple and reliable desktop application for accurate cheque printing.
 Supports custom cheque layouts, amount-in-words conversion, and print preview before final output.
 Designed for businesses to manage cheque issuance efficiently and reduce manual errors.
 Lightweight, fast, and built for everyday accounting use.
-![alt text](http://smatter.app/prominerchequeman.png)
+
+![ProminerChequeman](http://smatter.app/prominerchequeman.png)
